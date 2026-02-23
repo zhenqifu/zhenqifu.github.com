@@ -101,19 +101,16 @@ body {
     color: #222;
 }
 
-/* 标题稍微现代一点 */
 h3 {
     font-weight: 600;
     letter-spacing: 0.5px;
     margin-bottom: 15px;
 }
 
-/* 列表更舒服 */
 ul.square li {
     margin-bottom: 8px;
 }
 
-/* 链接更优雅 */
 a {
     color: #1a4f8b;
     text-decoration: none;
@@ -121,6 +118,22 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* ===== Modern Center Layout ===== */
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.six.columns.sidebar {
+    text-align: right;
+}
+
+.ten.columns.content {
+    float: none;
+    margin: 0 auto;
 }
 
 
