@@ -164,3 +164,8 @@ a:hover {
 }
 
 
+.sidebar,
+.content {
+    float: none !important;
+}
+
