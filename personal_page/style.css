@@ -120,21 +120,47 @@ a:hover {
     text-decoration: underline;
 }
 
-/* ===== Modern Center Layout ===== */
+/* ============================= */
+/* ===== Modern Center Layout ==== */
+/* ============================= */
 
-.container {
-    max-width: 1100px;
-    margin: 40px auto;
+.main-container {
+    max-width: 1200px;     /* 控制页面整体宽度 */
+    margin: 60px auto;     /* 页面整体居中 */
+    display: flex;         /* 使用现代布局 */
+    gap: 60px;             /* 左右间距 */
 }
 
-.six.columns.sidebar {
+/* Sidebar 左侧 */
+.sidebar {
+    width: 30%;
     text-align: right;
 }
 
-.ten.columns.content {
-    float: none;
-    margin: 0 auto;
+/* 右侧内容 */
+.content {
+    width: 70%;
 }
 
+/* 防止内容被压缩 */
+.content .container {
+    margin-bottom: 40px;
+}
+
+/* 响应式（手机适配） */
+@media (max-width: 900px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
 
 
