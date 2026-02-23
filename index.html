@@ -1,230 +1,90 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="en">
+<head>
   <meta charset="utf-8">
   <title>Welcome to Zhenqi Fu's Homepage</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <!-- CSS
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
-  ================================================== -->
-  <link rel="stylesheet" href="./personal_page/base.css">
-  <link rel="stylesheet" href="./personal_page/bootstrap.css">
-  <link rel="stylesheet" href="./personal_page/prettify.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./personal_page/style.css">
-  <link rel="stylesheet" href="./personal_page/skeleton.css">
-  <link rel="stylesheet" href="./personal_page/layout.css">
-  
 </head>
-  
 <body>
 
-  <!-- Primary Page Layout
-================================================== -->
- <div class="container main-container">
+<div class="main-container">
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <nav>
-          <h4 id="logo" style="text-align:right;">
-              <a href="./index.html" >
-                  <img src="./personal_page/fzq20240216.jpg" width="300" class="with_border">
-              </a> <br> <br>
-              <a href="http://zhenqifu.github.io">Zhenqi Fu (富振奇)</a>  
-          </h4>
-          <ul style="text-align:right;">
-            <li><h4><a href="http://zhenqifu.github.io/#about-me">About Me</a><h4></li>
-            <li><h4><a href="http://zhenqifu.github.io/#recent-news">Recent News</a><h4></li>
-            <li><h4><a href="http://zhenqifu.github.io/#publications">Publications</a><h4></li>
-            <li><h4><a href="http://zhenqifu.github.io/#academic-activities">Academic Activities</a><h4></li>
-            <li><h4><a href="http://zhenqifu.github.io/#resources">Resources</a><h4></li>
-            <li><h4><a href="http://zhenqifu.github.io/#contact">Contact</a><h4></li>
-            <li><h4><a href="http://zhenqifu.github.io/#google-scholar">Google Scholar</a><h4></li>
-            <li>&nbsp;</li>
-          </ul> 
-      </nav>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h4 id="logo">
+      <a href="./index.html">
+        <img src="./personal_page/fzq20240216.jpg" width="300" class="with_border">
+      </a> <br><br>
+      <a href="http://zhenqifu.github.io">Zhenqi Fu (富振奇)</a>
+    </h4>
+    <ul>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#recent-news">Recent News</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#academic-activities">Academic Activities</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#google-scholar">Google Scholar</a></li>
+    </ul>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    <!-- About Me -->
+    <div id="about-me" class="container">
+      <h3>About Me</h3>
+      <p>I am a postdoc researcher in the Department of Automation, Tsinghua University...</p>
     </div>
 
-<!-- Content -->
-<div class="content">
-    
-  <div class="container" id="about-me">
-        <h3>About Me</h3>
-        <p>
-        I am a postdoc researcher in the Department of Automation, Tsinghua University (THU), working with Prof. 
-        <a href="https://scholar.google.com/citations?user=CHAajY4AAAAJ&hl=zh-CN&oi=ao">Qionghai Dai (Fellow of the Chinese Academy of Engineering)</a> 
-        at <a href="https://media.au.tsinghua.edu.cn/">BBNC Lab</a>. 
-        Prior to this, I received the Ph.D. degree in Signal and Information Processing from Xiamen University (XMU), China, in Dec. 2023, advised by Prof. 
-        <a href="https://scholar.google.com/citations?user=k5hVBfMAAAAJ&hl=zh-CN&oi=ao">Xinghao Ding</a> 
-        at <a href="https://xmu-smartdsp.github.io/">SmartDSP Lab</a>. 
-        I was a visiting Ph.D. student at Nanyang Technological University (NTU), Singapore, from Dec. 2021 to Dec. 2022, advised by Prof. 
-        <a href="https://scholar.google.com/citations?hl=zh-CN&user=GGUNtCsAAAAJ&view_op=list_works&sortby=pubdate">Kai-Kuang Ma (IEEE Fellow)</a>. 
-        My current research interests include low-level vision, biomedical imaging, fluorescence microscopy imaging, and deep learning.
-        </p>
+    <!-- Recent News -->
+    <div id="recent-news" class="container">
+      <h3>Recent News</h3>
+      <ul class="square">
+        <li>We have one paper accepted in Nature Communications.</li>
+        <li>We have two papers accepted in IEEE TMM.</li>
+      </ul>
     </div>
 
-      
-      <div class="container" id="recent-news">
-    	    <h3>Recent News</h3>
-    	    <ul class="square">  
-             <li>
-              We have one paper accepted in Nature Communications. 
-    	      </li>  
-             <li>
-              We have two paper accepted in IEEE TMM. 
-    	      </li>  
-             <li>
-              We have one paper accepted in IEEE TMI. 
-    	      </li>  
-             <li>         
-              We have one paper accepted in CVPR 2025.  
-            </li>        
-            <li>         
-              We have two paper accepted in AAAI 2025.  
-            </li>   
-               
-    	    </ul>
-    	</div>      
-      
-      
-      <div class="container" id="publications">
+    <!-- Publications -->
+    <div id="publications" class="container">
       <h3>Selected & Favorite Works</h3>
-             
-      <li>               
-      V2V3D: View-to-View Denoised 3D Reconstruction for Light Field Microscopy.<br>
-      Jiayin Zhao#, Zhenqi Fu#, Tao Yu, Hui Qiao.<br> 
-      CVPR 2025.
-      [<a href="./personal_page/CVPR_25.pdf">pdf</a>]   
-      [<a href="https://joey1998hub.github.io/V2V3D/">code</a>]  
-      </li> 
-                                                  
-      <li>               
-      Learning a Simple Low-light Image Enhancer from Paired Low-light Instances.<br>
-      Zhenqi Fu, Yan Yang, Xiaotong Tu, Yue Huang, Xinghao Ding, Kai-Kuang Ma.<br> 
-      CVPR 2023.
-      [<a href="./personal_page/23_CVPR.pdf">pdf</a>]
-      [<a href="https://github.com/zhenqifu/PairLIE">code</a>]
-      </li>    
+      <ul>
+        <li>V2V3D: View-to-View Denoised 3D Reconstruction for Light Field Microscopy. [<a href="#">pdf</a>] [<a href="#">code</a>]</li>
+      </ul>
+    </div>
 
-      <li>               
-      Uncertainty Inspired Underwater Image Enhancement.<br>
-      Zhenqi Fu, Wu Wang, Yue Huang, Xinghao Ding, Kai-Kuang Ma.<br> 
-      ECCV 2022.
-      [<a href="./personal_page/ECCV22-PUIENET.pdf">pdf</a>]
-      [<a href="https://github.com/zhenqifu/PUIE-Net">code</a>]
-      </li>         
-        
-      <li>               
-      Unsupervised Underwater Image Restoration: From a Homology Perspective.<br>
-      Zhenqi Fu#, Huangxing Lin#, Yan Yang, Shu Chai, Liyan Sun, Yue Huang, Xinghao Ding. <br> 
-      AAAI 2022.
-      [<a href="./personal_page/AAAI22-USUIR.pdf">pdf</a>]
-      [<a href="https://github.com/zhenqifu/USUIR">code</a>]
-      </li>  
-        
-            
-       <li> 
-       Leveraging spatial-angular redundancy for self-supervised denoising of 3D fluorescence imagingwithout temporal dependency.<br>
-       Zhi Lu, Wentao Chen, Feihao Sun, Jiagi Fan, Xinyang Li, Zhengi Fu, Manchang Jin, Jiamin Wu, and Qionghai Dai. <br>
-       Nature Communications. (2025)
-       [<a href="">pdf</a>]
-       [<a href="">code</a>]
-      </li> 
-               
-               
-      <li> 
-      Token-Mixer: Bind Image and Text in One Embedding Space for Medical Image Reporting.<br>
-      Yan Yang, Jun Yu, Zhenqi Fu, Ke Zhang, Ting Yu, Xianyun Wang, Hanliang Jiang, Junhui Lv, Qingming Huang and Weidong Han. <br>
-      IEEE Transactions on Medical Imaging. (2024)
-      [<a href="./personal_page/24_TMI.pdf">pdf</a>]
-      [<a href="https://github.com/yangyan22/Token-Mixer">code</a>]
-      </li>       
-        
-      <li> 
-      MASNet: A Robust Deep Marine Animal Segmentation Network.<br>
-      Zhenqi Fu, Ruizhe Chen, Yue Huang, En Cheng, Xinghao Ding, and Kai-Kuang Ma. <br>
-      IEEE Journal of Oceanic Engineering. (2023)
-      [<a href="./personal_page/23_MASNet.pdf">pdf</a>]
-      [<a href="https://github.com/zhenqifu/MASNet">code</a>]
-      </li>          
-        
-      <li> 
-      Twice Mixing: A Rank Learning based Quality Assessment Approach for Underwater Image Enhancement.<br>
-      Zhenqi Fu, Xueyang Fu, Yue Huang, Xinghao Ding.  <br>
-      Signal Processing: Image Communication. (2022)
-      [<a href="./personal_page/22_Twice Mixing.pdf">pdf</a>]
-      [<a href="https://github.com/zhenqifu/Twice-Mixing">code</a>]
-      </li>        
+    <!-- Academic Activities -->
+    <div id="academic-activities" class="container">
+      <h3>Academic Activities</h3>
+      <ul>
+        <li>ICLR/ICML/NeurIPS/CVPR...</li>
+      </ul>
+    </div>
 
-      <li> 
-      Transformation-aware similarity measurement for image retargeting quality assessment via bidirectional rewarping.<br>
-      Feng Shao, Zhenqi Fu, Qiuping Jiang, Gangyi Jiang, Yo-Sung Ho.  <br>
-      IEEE Transactions on Systems, Man, and Cybernetics: Systems. (2019)  
-      [<a href="./personal_page/TRASIM_2019.pdf">pdf</a>]
-      [<a href="https://github.com/zhenqifu/TRASIM-driven-Multi-operator">code</a>]
-      </li>        
-              
-      <li>
-      数字自适应光学.<br>
-      吴嘉敏, 翟焱望, 郭钰铎, 唐若凡, 赵灿兵, 富振奇, 戴琼海. <br>
-      光学学报. (2025)
-      [<a href="./personal_page/数字自适应光学.pdf">pdf</a>]
-      </li>  
+    <!-- Resources -->
+    <div id="resources" class="container">
+      <h3>Resources</h3>
+      <ul>
+        <li><a href="#">V2V3D Dataset</a></li>
+      </ul>
+    </div>
 
-       
-      </div>
- 
-      
-      <div class="container" id="academic-activities">
-        <h3>Academic Activities</h3>
-            <h4>&nbsp Conference Reviewer</h4>
-              <ul class="square">
-              <li>ICLR/ICML/NeurIPS/CVPR/ICCV/ECCV/AAAI/ACMMM/ICASSP/ICME, etc. </li>     
-              </ul>
-            <h4>&nbsp Journal Reviewer</h4>  
-              <ul class="square">        
-              <li>TPAMI/TIP/IJCV/TNNLS/TMM/TCSVT/TMI/JBHI/TGRS/TCE/JOE/CVIU/SPL, etc. </li> 
-              </ul>
-      </div>   
-      
+    <!-- Contact -->
+    <div id="contact" class="container">
+      <h3>Contact</h3>
+      <p><strong>Email:</strong> fuzhenqi@mail.tsinghua.edu.cn</p>
+    </div>
 
-      <div class="container" id="resources">
-        <h3>Resources</h3>   
-          <ul class="square">
-                <li><strong><a href="https://joey1998hub.github.io/V2V3D/">V2V3D Dataset</a></strong>: A light field microscopy reconstruction dataset [2025].<br></li>
-                <li><strong><a href="https://github.com/zhenqifu/PairLIE">PairLIE Dataset</a></strong>: A low-light image enhancement dataset with multi-exposure images [2023].<br></li>            
-                <li><strong><a href="https://github.com/zhenqifu/MASNet">RMAS Dataset</a></strong>: A real-world marine animal segmentation dataset [2023].<br></li>            
-                <li><strong><a href="https://github.com/zhenqifu/PUIE-Net">New UIEBD Dataset</a></strong>: An underwater image enhancement dataset with multiple labels [2022].<br></li>
-                <li><strong><a href="https://github.com/zhenqifu/Twice-Mixing">UIE IQA Dataset</a></strong>: An underwater image enhancement quality assessment dataset [2021].<br></li>
-                <li><strong><a href="https://github.com/zhenqifu/SIRQA">NBU SIRQA Dataset</a></strong>: A stereoscopic image retargeting quality assessment dataset [2019].<br></li>
-          </ul>
-      </div>
-   
+    <!-- Google Scholar -->
+    <div id="google-scholar" class="container">
+      <h3>Google Scholar</h3>
+      <p><a href="https://scholar.google.com/citations?user=LaxVNC8AAAAJ&hl=zh-CN&oi=ao">Google Scholar (Zhenqi Fu)</a></p>
+    </div>
 
-      <div class="container" id="contact">
-        <h3>Contact</h3>
-          <td style="text-align:right;"><strong>Email</strong>: fuzhenqi@mail.tsinghua.edu.cn</td> <br>
-      </div>
-        
-        
-       <div class="container" id="google-scholar">
-        <h3>Google Scholar</h3>
-          <strong><a href="https://scholar.google.com/citations?user=LaxVNC8AAAAJ&hl=zh-CN&oi=ao">Google Scholar (Zhenqi Fu)</a><br>
-      </div>       
-      
-      <hr>
-      <footer class="ten center-column">
-             <p class="large">Last update on 2026-02-23.</p>
-             <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=jdTTLX1esqm3h4V-9Kb7oCzdWRanMeCk3Xx80oJaNU8"></script>
-      </footer>
+  </div><!-- End Content -->
 
-      
-      
- </div><!-- Content -->
- </div><!-- container -->
-      
-<!-- End Document
-================================================== -->
+</div><!-- End main-container -->
 
 </body>
 </html>
